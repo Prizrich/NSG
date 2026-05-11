@@ -27,8 +27,8 @@ export const ALL_MODIFIERS = [
 ];
 
 export const characters = {
-    beaver: { name: "Бобёр", emoji: "🦫" }, oracle: { name: "Оракул", emoji: "🐱🔮" },
-    goblin: { name: "Гоблин", emoji: "👺" }, bartender: { name: "Бармен", emoji: "🍺" },
+    beaver: { name: "Бобёр", emoji: "🐿️" }, oracle: { name: "Оракул", emoji: "🐱🔮" },
+    goblin: { name: "Гоблин", emoji: "👹" }, bartender: { name: "Бармен", emoji: "🍺" },
     mechanic: { name: "Механик", emoji: "🔧" }, comedian: { name: "Комик", emoji: "🎤" },
     angel: { name: "Ангел", emoji: "😇" }, demon: { name: "Демон", emoji: "😈" }
 };
@@ -74,11 +74,11 @@ export const tasksData = {
         { text: "⛪ Священник тайно играет в слоты.", choices: [
             { txt: "🙏 Сделать вид, что не заметил", suc:10, fail:-5, chance:0.8, char:"angel", danger:false, jailChance:0 },
             { txt: "🍷 Шантажировать", suc:18, fail:-12, chance:0.55, char:"bartender", danger:false, jailChance:0.3 },
-            { txt: "🔥 Устроить экзорцизм", suc:25, fail:-20, chance:0.45, char:"demon", danger:true, jailChance:0.35 }
+            { txt: "🕯️ Устроить экзорцизм", suc:25, fail:-20, chance:0.45, char:"demon", danger:true, jailChance:0.35 }
         ] },
         { text: "🕯️ В церкви закончились свечи.", choices: [
             { txt: "🔦 Включить фонарики", suc:14, fail:-8, chance:0.7, char:"mechanic", danger:false, jailChance:0 },
-            { txt: "🪵 Развести костёр из икон", suc:20, fail:-15, chance:0.5, char:"goblin", danger:true, jailChance:0.25 },
+            { txt: "🔥 Развести костёр из икон", suc:20, fail:-15, chance:0.5, char:"goblin", danger:true, jailChance:0.25 },
             { txt: "🙏 Молиться в темноте", suc:8, fail:-4, chance:0.8, char:"oracle", danger:false, jailChance:0 }
         ] }
     ]

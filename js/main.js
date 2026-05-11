@@ -5,7 +5,7 @@ import {
     setCanSave, setGameCompleted, setIsInJail, setIsSpinning, setIsWorking, setCurrentJob, setCurrentTask,
     incrementSpinCount, incrementLegendCount, incrementJobCount, setPlayer, setActiveModifiers
 } from './utils.js';
-import { initAudio, updateMusicVolume, updateSFXVolume, getMusicVolume, getSfxVolume } from './audio.js';
+import { initAudio, updateMusicVolume, updateSFXVolume, getMusicVolume, getSfxVolume, playMusicForLocation } from './audio.js';
 import { applyThemeBackground, effects } from './effects.js';
 import { 
     loadPlaythroughCount, updateModifiersSelectorUI, updateModifiersUI, applySelectedModifiers, 

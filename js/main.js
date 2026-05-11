@@ -71,6 +71,12 @@ function toggleSettings() {
 function exitToMenu() {
     if (confirm("Выйти в главное меню? Прогресс сохранится.")) {
         saveGame();
+        
+        // Останавливаем музыку через audio модуль
+        import('./audio.js').then(module => {
+            module.stopCurrentMusic();
+        });
+        
         document.getElementById("gameContainer").style.display = "none";
         document.getElementById("mainMenu").style.display = "flex";
         if (gameCompleted) { 
